@@ -1,0 +1,29 @@
+/* 
+  Localizable.strings
+  MyFlower
+
+  Created by ljie on 2017/8/24.
+  Copyright © 2017年 AppleFish. All rights reserved.
+*/
+
+"plant"="Plant";
+"planthint"="Please choose the flower which you would plant";
+"rose"="Rose";
+"sunflower"="Sunflower";
+"tulip"="Tulip";
+"countdown"="seconds later will start planting";
+"finish"="Finished Planting";
+"grownup"="The flower have grown up";
+"cancel"="Give up";
+"sure"="Continue";
+"duo"="flowers";
+
+"flowerlist"="My Flower List";
+
+"withered"="Seven days of flowering";
+"alive"="A cluster of flowers with the mood";
+
+"date"="Plant Date";
+"num"="Plant Number";
+
+"die"="Withered";

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FlowerViewController">
+            <connections>
+                <outlet property="flowerNumLab" destination="nlE-Uq-9GB" id="Dw1-Om-wVY"/>
+                <outlet property="grassPadding" destination="Mc2-t8-IJy" id="cog-d0-TFL"/>
+                <outlet property="grassView" destination="Lij-lX-Aqn" id="Bom-lS-Brp"/>
+                <outlet property="seedView" destination="YOL-WS-StY" id="HxY-dF-TZI"/>
+                <outlet property="sunView" destination="cza-w7-rrT" id="gSe-rX-yPy"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sun" translatesAutoresizingMaskIntoConstraints="NO" id="cza-w7-rrT">
+                    <rect key="frame" x="85" y="100" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="2h3-fI-z7Z"/>
+                        <constraint firstAttribute="height" constant="60" id="SPu-BP-aPE"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lij-lX-Aqn">
+                    <rect key="frame" x="0.0" y="477" width="375" height="190"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YOL-WS-StY">
+                            <rect key="frame" x="182" y="94" width="11" height="2"/>
+                            <color key="backgroundColor" red="0.37254901960784315" green="0.22352941176470587" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="2" id="cow-3v-y8h"/>
+                                <constraint firstAttribute="width" constant="11" id="jlz-tY-swj"/>
+                            </constraints>
+                        </view>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flower" translatesAutoresizingMaskIntoConstraints="NO" id="C0s-VV-J1g">
+                            <rect key="frame" x="347" y="162" width="20" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="awv-Rz-WEq"/>
+                                <constraint firstAttribute="width" constant="20" id="p8l-bI-QtX"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nlE-Uq-9GB">
+                            <rect key="frame" x="337" y="165.5" width="8" height="14.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.7843552827835083" green="0.884055495262146" blue="0.78433060646057129" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstItem="YOL-WS-StY" firstAttribute="centerY" secondItem="Lij-lX-Aqn" secondAttribute="centerY" id="3NL-nI-zOP"/>
+                        <constraint firstItem="nlE-Uq-9GB" firstAttribute="centerY" secondItem="C0s-VV-J1g" secondAttribute="centerY" id="6jJ-jL-CJQ"/>
+                        <constraint firstAttribute="bottom" secondItem="C0s-VV-J1g" secondAttribute="bottom" constant="8" id="Gy1-Aq-J7h"/>
+                        <constraint firstAttribute="height" constant="190" id="Mc2-t8-IJy"/>
+                        <constraint firstItem="C0s-VV-J1g" firstAttribute="leading" secondItem="nlE-Uq-9GB" secondAttribute="trailing" constant="2" id="erj-TL-xlM"/>
+                        <constraint firstAttribute="trailing" secondItem="C0s-VV-J1g" secondAttribute="trailing" constant="8" id="mhh-zl-3cZ"/>
+                        <constraint firstItem="YOL-WS-StY" firstAttribute="centerX" secondItem="Lij-lX-Aqn" secondAttribute="centerX" id="oV1-qA-7e2"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.96789824960000004" green="0.96165668959999995" blue="0.91373026369999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Lij-lX-Aqn" secondAttribute="bottom" id="Mh8-41-Vhn"/>
+                <constraint firstItem="Lij-lX-Aqn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="SQp-kE-c0L"/>
+                <constraint firstAttribute="trailing" secondItem="Lij-lX-Aqn" secondAttribute="trailing" id="cH3-1R-rMA"/>
+                <constraint firstItem="cza-w7-rrT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="85" id="hz6-I9-U75"/>
+                <constraint firstItem="cza-w7-rrT" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="x5M-s3-9Jh"/>
+            </constraints>
+            <point key="canvasLocation" x="34.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="flower" width="32" height="32"/>
+        <image name="sun" width="32" height="32"/>
+    </resources>
+</document>

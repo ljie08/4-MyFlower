@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FlowerListViewController">
+            <connections>
+                <outlet property="aliveBtn" destination="8WY-HS-mnc" id="JNN-N5-Ygg"/>
+                <outlet property="flowerTable" destination="iwy-27-LF8" id="w5H-Hn-sKI"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="witherBtn" destination="fFw-5h-Cak" id="VTW-EQ-SBI"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" tag="10000" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fFw-5h-Cak">
+                    <rect key="frame" x="15" y="625" width="31" height="22"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="10" image="dead">
+                        <color key="titleColor" red="0.64064131459999996" green="0.54519309039999997" blue="0.86693715000000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <connections>
+                        <action selector="showHint:" destination="-1" eventType="touchUpInside" id="cca-tN-bS1"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8WY-HS-mnc">
+                    <rect key="frame" x="329" y="625" width="31" height="22"/>
+                    <state key="normal" title="10" image="alive">
+                        <color key="titleColor" red="0.64064131459999996" green="0.54519309039999997" blue="0.86693715000000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <connections>
+                        <action selector="showHint:" destination="-1" eventType="touchUpInside" id="SYN-TI-Saw"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="iwy-27-LF8">
+                    <rect key="frame" x="20" y="64" width="335" height="543"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="1PA-t9-jM2"/>
+                        <outlet property="delegate" destination="-1" id="pOi-50-2dC"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="8WY-HS-mnc" secondAttribute="bottom" constant="20" id="1OS-lN-Jd8"/>
+                <constraint firstAttribute="trailing" secondItem="8WY-HS-mnc" secondAttribute="trailing" constant="15" id="A9B-XK-b1O"/>
+                <constraint firstAttribute="bottom" secondItem="iwy-27-LF8" secondAttribute="bottom" constant="60" id="OBq-Im-XCo"/>
+                <constraint firstItem="iwy-27-LF8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="Yn3-a4-ncN"/>
+                <constraint firstAttribute="bottom" secondItem="fFw-5h-Cak" secondAttribute="bottom" constant="20" id="mQ7-U4-zH5"/>
+                <constraint firstAttribute="trailing" secondItem="iwy-27-LF8" secondAttribute="trailing" constant="20" id="mXM-Gf-2zV"/>
+                <constraint firstItem="fFw-5h-Cak" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="nCZ-V7-pZw"/>
+                <constraint firstItem="iwy-27-LF8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="uu5-Yr-ux4"/>
+                <constraint firstItem="8WY-HS-mnc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fFw-5h-Cak" secondAttribute="trailing" constant="15" id="yvv-4Y-1yl"/>
+            </constraints>
+            <point key="canvasLocation" x="34.5" y="53.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="alive" width="12" height="12"/>
+        <image name="dead" width="12" height="12"/>
+    </resources>
+</document>

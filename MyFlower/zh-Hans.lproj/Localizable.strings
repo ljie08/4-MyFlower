@@ -1,0 +1,30 @@
+/* 
+  Localizable.strings
+  MyFlower
+
+  Created by ljie on 2017/8/24.
+  Copyright © 2017年 AppleFish. All rights reserved.
+*/
+
+"plant"="种花";
+"planthint"="请选择要种的花";
+"rose"="玫瑰";
+"sunflower"="向日葵";
+"tulip"="郁金香";
+"countdown"="秒后开始播种~";
+"finish"="种花完成";
+"grownup"="花儿已经长大啦~";
+"cancel"="不种了";
+"sure"="继续种";
+"duo"="朵";
+
+"flowerlist"="我的花儿们";
+
+"withered"="七日花期尽，凋零知多少";
+"alive"="花一簇，多少显心境";
+//Seven days of flowering, Know how much withered
+
+"date"="种植日期";
+"num"="种植数量";
+
+"die"="枯萎了";
